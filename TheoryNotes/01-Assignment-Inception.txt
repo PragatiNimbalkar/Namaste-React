@@ -1,0 +1,141 @@
+1 What is Emmet?
+Ans--> Basically Emmet is used to write HTML and CSS faster
+Emmet is actually built in VS code
+we can say it is web-development toolkit that can greatly improve your HTML and CSS workFlow.
+it is abbrevation and snippet tool that allow us to write shotcuts ,which are then expanded out into a complete section of code.
+
+    a) How to enable emmet in VSCode
+        1) goto left bottom corner setting icon and then click on that
+        2) then select settings option from the list click on that2
+        3) then you will get one window ,over there click on Open setting(Json) icon ,which is present on right tom corner
+        4) once click on that icon you will open settings.json file open
+        5) so there we need to add below code 
+        "emmet.includeLanguages": {
+                "javascrip": "javascriptreact"
+            }
+
+example if we write h1.myclass and put tab it will auto complete below line of code
+        <h1class="myclass"></h1>
+
+========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+2 Difference between a Library and Framework
+Ans--> The Technical difference between Library and Framework lies in a term called Inversion Of Control
+ -when you use a library, you are in charge of the flow of the application, You are choosing when and where to use library.
+ -when you use a framework, the framework is in charge of the flow. It provided some places for you to plugin your code, but it called the code plugged in as needed 
+ -example --> JQuery is libraby and Vue.js is a framework
+ -Frameworks and libraries are both code written by someone else that helps you perform some common tasks in a less verbose way.
+ -A framework inverts the control of the program. It tells the developer what they need. A library doesn’t. The programmer calls the -library where and when they need it.
+ -The degree of freedom a library or framework gives the developer will dictate how “opinionated” it is.
+
+ =====================================================================================================================================================================================================================================================================================================================================================================================================================
+
+ 3 What is CDN? Why do we use it?
+ Ans --> CDN or Content Delivery Network has been around since the late 90's
+ --It was Originally developed to speed up the delivery of Static HTML Content for users all around the world.
+ --CDN had evolved over the ensuring decades.
+ --NOwadays, a CDN should be used whenever HTTP trafic is served.
+
+ Why do we use it--> 
+ --The number one reason for using CDN is to improve your user's experience in terms of speed
+ --A website may be hosted in a particular region, but if the majority of its users are coming from an entirely different region – eg., --if your site is hosted in North America, GTmetrix might report fast speeds based on our default test location, but if a good chunk --of your users come from Europe, their speed will not be as fast as you experience it to be.
+ 
+ --A global CDN would allow users from a European point of origin to download static content from a closer source. Instead of spanning --the Atlantic ocean to retrieve data, they can connect to a server in say, London, UK, to get the same data. This reduces latency and --provides a faster loading of your website.
+
+ --CDNs not only ensure a faster experience to your users, but they also help to prevent site crashes in the event of traffic surges – --CDNs help to distribute bandwidth across multiple servers, instead of allowing one server to handle all traffic.
+ 
+========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+4 Why is React known as React?
+Ans --> React is called as react because it was designed to be a declarative, efficient and flexible javascript library for building 
+user interfaces.
+--The name "React" was choose because the library was designed to allow developers to "react" to changes in state and data within an
+ application, and to update user interface in a declarative and efficient manner.
+-- React was developed by facebook and released in 2013 ,and it has since become javascript one of the most popular libraries 
+for building web and mobile applications.
+-- It is used by many companies and organizations around the world, and it has a large and active developer community.
+
+========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+5 What is crossorigin in script tag?
+Ans  ==> Cross-Origin Resource Sharing
+The HTML <script> crossorigin Attribute is used for loading an external script into their domain from a third party server or another domain with the support of HTTP CORS Request. This attribute is used to protect sensitive information from the third party when fetching out the results.
+
+Cross-Origin Resource Sharing(CORS) is a tool that allows web pages requesting for resources from another domain that is outside of their own domain. It is also used for managing cross-origin requests which is a request for a resource from an outside domain.
+
+Syntax:
+
+<script crossorigin="anonymous | use-credentials">
+
+Attribute Values:
+
+anonymous: It has a default value. It defines a CORS request will be sent without passing the credentials information.
+use-credentials: A cross-origin request will be sent with credentials, cookies, and certificate.
+Note: This attribute is only valid for use if we try to fetch the resources from the third party domain. 
+
+Example: Below code illustrates the use of crossorigin attribute with the <script> element. 
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>HTML script crossorigin Attribute</title>
+</head>
+ 
+<body style="text-align: center">
+    <h1>GeeksForGeeks</h1>
+ 
+    <h2>HTML script crossorigin Attribute</h2>
+ 
+    <br />
+    <button>Submit</button>
+ 
+    <script type="text/javascript"
+        src="my_script.js" crossorigin="anonymous">
+    </script>
+</body>
+ 
+</html>
+
+========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+6 What is diference between React and ReactDOM
+Ans ==> When you work with React, it is more than likely that you will build your apps with JSX. The JSX is a tag-based JavaScript syntax like looks familiar with HTML. React element is the atomic and most basic unit that you need to master before JSX and before moving forward with React.
+
+Note: In order to work with React in the browsers, we need to include 2 libraries: React and ReactDOM. React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.
+
+Including Scripts: Following are the CDN links for React and ReactDOM:
+
+React: https://cdnjs.com/libraries/react
+ReactDOM: https://cdnjs.com/libraries/react-dom
+
+========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+7 What is difference between react.development.js and react.production.js files via CDN?
+Ans ==> 
+The development build is used - as the name suggests - for development reasons. You have Source Maps, debugging and often times hot reloading ability in those builds.
+
+The production build, on the other hand, runs in production mode which means this is the code running on your client's machine. 
+
+========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+8 What is async and defer?
+Ans ==>If async is present: The script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes)
+ If defer is present (and not async ): The script is downloaded in parallel to parsing the page, and executed after the page has finished parsing.
+
+========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+9 What is shortest program of JavaScript?
+Ans  ==> An Empty File 
+
+========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+10 What is shortest program of React?
+Ans ==>Injecting React Into The Code
+ <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+

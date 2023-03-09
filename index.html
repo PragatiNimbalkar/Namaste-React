@@ -1,0 +1,148 @@
+ 
+    <!-- h1 tag using html -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste-React</title>
+</head>
+<body>
+
+    <h1>Namaste Everyone!</h1>
+</body>
+</html> -->
+
+
+<!-- 
+h1 tag using JS -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste-React</title>
+</head>
+<body>
+    <div id ="root">
+    </div>
+    
+</body>
+<script>
+    const heading = document.createElement("h1");
+    heading.innerHTML="Namaste Everyone From Javascript";
+    const root = document.getElementById("root"); //getting root from html
+    root.appendChild(heading); //appending heading to root
+</script>
+</html> -->
+
+
+<!-- using react -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste-React</title>
+</head>
+<body>
+    <div id="root">
+    </div>
+
+<script 
+crossorigin 
+src="https://unpkg.com/react@18/umd/react.development.js">
+</script>
+<script 
+crossorigin 
+src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+</script>
+
+<script>
+    // createElement takes 3 args
+    const heading = React.createElement("h1" ,{
+        id:"title"
+    },"Namaste Everyone From React!");
+    // Used ReactDOM to render tags on web
+    console.log(heading)
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    
+   
+    //passing react element inside root
+    root.render(heading);
+
+   // Note :-- Our application how big it is will have only one root and only one root.render.
+   // Every Thing will be build inside root
+   //root is the place where react run
+   //we can have other element also there with root elements like header and footer there can be many no of html
+
+  // que -- what is {} from createElement 2 arg
+  //que 2  -- if react root already have some thing  ,after render one thing what will happend
+  // -- render will overried data which root already have 
+</script>
+</body>
+</html> -->
+
+
+<!-- 
+code for complex html with react -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste-React</title>
+</head>
+<body>
+<div id="root"></div>
+<script 
+crossorigin 
+src="https://unpkg.com/react@18/umd/react.development.js">
+</script>
+<script 
+crossorigin 
+src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+</script>
+
+<script>
+    const hea1 = React.createElement("h1", { id: "h11", title: "header1" }, "Header1");
+        const hea2 = React.createElement("h2", { id: "h22", title: "header2" }, "Header2");
+        const h3 = React.createElement("div", { id: "container" }, [hea1, hea2]);
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(h3)
+    reactDom
+</script>
+</body>
+</html> -->
+
+<!-- Let's do this in diff file -->
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste-React</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="root"></div>
+<script 
+crossorigin 
+src="https://unpkg.com/react@18/umd/react.development.js">
+</script>
+<script 
+crossorigin 
+src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+</script>
+<script src ="App.js">
+</script>
+
+</body>
+</html>
